@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcw-eI-dzj">
@@ -23,7 +23,9 @@
                                     <constraint firstAttribute="height" constant="30" id="7be-9e-4fZ"/>
                                     <constraint firstAttribute="width" constant="120" id="BcA-0M-sWH"/>
                                 </constraints>
-                                <state key="normal" title="Red Dwarf"/>
+                                <state key="normal" title="Red Dwarf">
+                                    <color key="titleColor" red="1" green="0.1022875992" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="IjJ-f0-Ruf" kind="show" identifier="redDwarfSegue" id="zXF-yo-zTS"/>
                                 </connections>
@@ -33,25 +35,32 @@
                                     <constraint firstAttribute="height" constant="30" id="2Th-vW-sUB"/>
                                     <constraint firstAttribute="width" constant="120" id="eoJ-0W-mPj"/>
                                 </constraints>
-                                <state key="normal" title="Blue Star"/>
+                                <state key="normal" title="Blue Star">
+                                    <color key="titleColor" red="0.032072455085848307" green="5.5419979384142232e-16" blue="0.99835759401321411" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="IjJ-f0-Ruf" kind="show" identifier="blueStarSegue" id="8ZN-DU-UOd"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outerSpace" translatesAutoresizingMaskIntoConstraints="NO" id="g6f-WF-9C9"/>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pkw-rc-ama" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3hW-Xm-Pap"/>
                             <constraint firstItem="pkw-rc-ama" firstAttribute="top" secondItem="rcw-eI-dzj" secondAttribute="bottom" constant="146" id="8EK-zd-gam"/>
                             <constraint firstItem="rcw-eI-dzj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HYi-HM-keO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g6f-WF-9C9" secondAttribute="bottom" id="Sab-Lh-9dA"/>
+                            <constraint firstItem="g6f-WF-9C9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gJq-d9-bhj"/>
+                            <constraint firstAttribute="trailing" secondItem="g6f-WF-9C9" secondAttribute="trailing" id="oxL-je-o9n"/>
                             <constraint firstItem="rcw-eI-dzj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="156" id="tjh-i9-Pe8"/>
+                            <constraint firstItem="g6f-WF-9C9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="y7u-lv-9Mx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Intergalactic Travel" id="PYe-Bk-kLi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903.125" y="138.8671875"/>
+            <point key="canvasLocation" x="901.60000000000002" y="138.0809595202399"/>
         </scene>
         <!--Star View Controller-->
         <scene sceneID="zyt-4G-kMd">
@@ -62,14 +71,26 @@
                         <viewControllerLayoutGuide type="bottom" id="bRu-qN-qMv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w2g-3n-aqC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p8u-xR-KaJ"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p8u-xR-KaJ" firstAttribute="top" secondItem="kAz-Jp-gaU" secondAttribute="bottom" id="I0d-YV-p7A"/>
+                            <constraint firstAttribute="trailing" secondItem="p8u-xR-KaJ" secondAttribute="trailing" id="Iro-IA-eR1"/>
+                            <constraint firstItem="p8u-xR-KaJ" firstAttribute="leading" secondItem="w2g-3n-aqC" secondAttribute="leading" id="bGS-uo-1D5"/>
+                            <constraint firstItem="bRu-qN-qMv" firstAttribute="top" secondItem="p8u-xR-KaJ" secondAttribute="bottom" id="egh-sL-HNq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="starImageView" destination="p8u-xR-KaJ" id="Edw-N4-GBT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2z-ma-57A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1661" y="139"/>
+            <point key="canvasLocation" x="1660.9375" y="138.8671875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9fS-cE-zo2">
@@ -90,6 +111,9 @@
             <point key="canvasLocation" x="137.5" y="138.8671875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="outerSpace" width="800" height="509"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8ZN-DU-UOd"/>
     </inferredMetricsTieBreakers>
